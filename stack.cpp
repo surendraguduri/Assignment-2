@@ -22,7 +22,7 @@ void push(int value)
 
 int pop()
 {
-    node *temp;
+    struct node *temp;
     int n;
     temp = top;
     n = temp->data;
