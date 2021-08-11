@@ -1,26 +1,30 @@
 #include<stdio.h>
-void even(int x)
-{
-	printf("Even numbers are:");
-	while(x<=100)
-	{
-		printf("%d,",x);
-		x=x+2;
-	}
-}
-void odd(int x)
-{
-	printf("\nOdd numbers are:");
-	while(x<=100)
-	{
-		printf("%d,",x);
-		x=x+2;
-	}
-}
 int main()
 {
-	int x=1;
-	even(2);
-	odd(1);
-	return 0;
+    int i,j=0,k=0;
+    int x=1,y=100;
+    int a[50],b[50];
+    for(i=x;i<=y;i++)
+    {
+        if(i%2==0)
+        {
+            a[j]=i;
+            j++;
+        }
+        else
+        {
+            b[k]=i;
+            k++;
+        }
+    }
+    printf("Even numbers are: ");
+    for(i=0;i<y/2;i++)
+    {
+        printf("%d,",a[i]);
+    }
+    printf("\nOdd numbers are: ");
+    for(i=0;i<y/2;i++)
+    {
+        printf("%d,",b[i]);
+    }
 }
