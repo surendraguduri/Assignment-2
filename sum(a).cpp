@@ -11,7 +11,11 @@ int main()
 	while(n)
 	{
 		scanf("%d\n",&x);
-		if(x<=0)
+		if(x<0)
+		{
+			continue;
+		}
+		else if(x==0)
 		{
 			break;
 		}
