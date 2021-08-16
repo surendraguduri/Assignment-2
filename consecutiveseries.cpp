@@ -3,15 +3,15 @@ int main()
 {
     int x,i,j;
     int s=0,c=0,k=0;
-    int a[x],p[x];
-    scanf(" %d ",&x);
+    int a[100],p[100];
+    scanf("%d",&x);
     for(i=1;i<=x;i++)
     {
     	s=s+i;
 	}
 	for(i=0;i<s;i++)
 	{
-		scanf("%d ",&a[i]);
+		scanf("%d",&a[i]);
 	}
 	
     for(i=1;i<=x;i++)
